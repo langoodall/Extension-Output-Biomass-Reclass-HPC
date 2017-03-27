@@ -14,7 +14,7 @@ namespace Landis.Extension.Output.BiomassReclass
     {
 
         public static readonly ExtensionType extType = new ExtensionType("output");
-        public static readonly string PlugInName = "Output Biomass Reclass";
+        public static readonly string ExtensionName = "Output Biomass Reclass";
 
         private string mapNameTemplate;
         private IEnumerable<IMapDefinition> mapDefs;
@@ -26,7 +26,7 @@ namespace Landis.Extension.Output.BiomassReclass
         //---------------------------------------------------------------------
 
         public PlugIn()
-            : base(PlugInName, extType)
+            : base(ExtensionName, extType)
         {
         }
 
@@ -63,7 +63,7 @@ namespace Landis.Extension.Output.BiomassReclass
             SiteVars.Initialize();
             this.mapNameTemplate = parameters.MapFileNames;
             this.mapDefs = parameters.ReclassMaps;
-
+            MetadataHandler.InitializeMetadata(mapNameTemplate, mapDefs);
         }
 
         //---------------------------------------------------------------------

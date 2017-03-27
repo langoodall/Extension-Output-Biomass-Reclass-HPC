@@ -20,7 +20,7 @@ namespace Landis.Extension.Output.BiomassReclass
         {
             get
             {
-                return PlugIn.PlugInName;
+                return PlugIn.ExtensionName;
             }
         }
 
