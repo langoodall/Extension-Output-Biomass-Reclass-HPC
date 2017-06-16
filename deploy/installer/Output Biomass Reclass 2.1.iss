@@ -1,6 +1,6 @@
 #define PackageName      "Biomass Reclassified Output"
 #define PackageNameLong  "Biomass Reclassified Output Extension"
-#define Version          "2.0"
+#define Version          "2.1"
 #define ReleaseType      "official"
 #define CoreVersion      "6.0"
 #define CoreReleaseAbbr  ""
@@ -11,7 +11,8 @@
 
 #include "package (Setup section) v6.0.iss"
 
-
+
+
 
 [Files]
 ; This .dll IS the extension (ie, the extension's assembly)
