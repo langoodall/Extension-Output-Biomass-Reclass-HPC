@@ -1,6 +1,6 @@
 #define PackageName      "Biomass Reclassified Output"
 #define PackageNameLong  "Biomass Reclassified Output Extension"
-#define Version          "2.0"
+#define Version          "2.1"
 #define ReleaseType      "official"
 #define CoreVersion      "6.0"
 #define CoreReleaseAbbr  ""
@@ -11,7 +11,8 @@
 
 #include "package (Setup section) v6.0.iss"
 
-
+
+
 
 [Files]
 ; This .dll IS the extension (ie, the extension's assembly)
@@ -24,20 +25,16 @@ Source: ..\..\src\bin\debug\Landis.Extension.Output.BiomassReclass.dll; DestDir:
 Source: ..\..\src\bin\Debug\Landis.Library.Metadata.dll; DestDir: {#ExtDir}; Flags: replacesameversion uninsneveruninstall
 
 
-; User Guides are no longer shipped with installer
-;Source: docs\LANDIS-II Biomass Reclass Output v2.0 User Guide.pdf; DestDir: {#AppDir}\docs
-
-
 ; Complete example for testing the extension
-Source: ..\examples\*.txt; DestDir: {#AppDir}\examples\Output Biomass Reclass
-Source: ..\examples\*.gis; DestDir: {#AppDir}\examples\Output Biomass Reclass
-Source: ..\examples\*.bat; DestDir: {#AppDir}\examples\Output Biomass Reclass
-Source: ..\examples\*.csv; DestDir: {#AppDir}\examples\Output Biomass Reclass
+Source: ..\examples\*.txt; DestDir: {#AppDir}\examples\Output Biomass Reclass; Flags: replacesameversion
+Source: ..\examples\*.gis; DestDir: {#AppDir}\examples\Output Biomass Reclass; Flags: replacesameversion
+Source: ..\examples\*.bat; DestDir: {#AppDir}\examples\Output Biomass Reclass; Flags: replacesameversion
+Source: ..\examples\*.csv; DestDir: {#AppDir}\examples\Output Biomass Reclass; Flags: replacesameversion
 
 
 ; LANDIS-II identifies the extension with the info in this .txt file
 ; NB. New releases must modify the name of this file and the info in it
-#define InfoTxt "Biomass Reclass 2.0.txt"
+#define InfoTxt "Output Biomass Reclass 2.1.txt"
 Source: {#InfoTxt}; DestDir: {#LandisPlugInDir}
 
 

@@ -1,10 +1,10 @@
-Title:			README_OutputBiomassReclass2.0
+Title:			README_OutputBiomassReclass2.1
 Project:		LANDIS-II Landscape Change Model
 Project Component:	Extension-Base-Wind
 Component Deposition:	https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-Reclass
 Author:			LANDIS-II Foundation
 Origin Date:		21 Apr 2017
-Final Date:		
+Final Date:		15 Jun	2017
 
 
 Welcome to the source code repository for Extension-Output-Biomass-Reclass, a LANDIS-II output extension.
