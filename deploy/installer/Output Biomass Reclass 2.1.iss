@@ -1,6 +1,6 @@
 #define PackageName      "Biomass Reclassified Output"
 #define PackageNameLong  "Biomass Reclassified Output Extension"
-#define Version          "2.1"
+#define Version          "2.1.1"
 #define ReleaseType      "official"
 #define CoreVersion      "6.0"
 #define CoreReleaseAbbr  ""
