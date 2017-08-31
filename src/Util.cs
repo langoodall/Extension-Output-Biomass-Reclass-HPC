@@ -2,7 +2,8 @@
 //  Authors:  Robert M. Scheller, Jimm Domingo
 
 using Landis.Library.BiomassCohorts;
-//using Landis.Cohorts;
+using Landis.SpatialModeling;
+using Landis.Core;
 
 namespace Landis.Extension.Output.BiomassReclass
 {
@@ -11,8 +12,9 @@ namespace Landis.Extension.Output.BiomassReclass
     /// </summary>
     public static class Util
     {
-        public static int ComputeBiomass(ISpeciesCohorts cohorts)
+        public static int ComputeBiomass(Site site, ISpecies species)
         {
+            ISpeciesCohorts cohorts = (Landis.Library.BiomassCohorts.ISpeciesCohorts) SiteVars.Cohorts[site][species];
             int total = 0;
             if (cohorts != null)
                 foreach (ICohort cohort in cohorts)
@@ -22,12 +24,13 @@ namespace Landis.Extension.Output.BiomassReclass
 
         //---------------------------------------------------------------------
 
-        public static int ComputeBiomass(ISiteCohorts cohorts)
+        public static int ComputeBiomass(Site site)
         {
+            ISiteCohorts cohorts = (Landis.Library.BiomassCohorts.ISiteCohorts) SiteVars.Cohorts[site];
             int total = 0;
             if (cohorts != null)
                 foreach (ISpeciesCohorts speciesCohorts in cohorts)
-                    total += ComputeBiomass(speciesCohorts);
+                    total += ComputeBiomass(site, speciesCohorts.Species);
             return total;
         }
     }
