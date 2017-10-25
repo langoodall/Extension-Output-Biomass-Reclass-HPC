@@ -43,7 +43,7 @@
      <SpecificVersion>False</SpecificVersion>
      <Private>False</Private>
     </Reference>
-    <Reference Include="Landis.Library.BiomassCohorts-v2">
+    <Reference Include="Landis.Library.BiomassCohorts-v2.0.1">
      <SpecificVersion>False</SpecificVersion>
      <Private>False</Private>
     </Reference>
@@ -83,7 +83,8 @@
    <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
-  </PropertyGroup>
+</PropertyGroup>
+
   <PropertyGroup>
     <PreBuildEvent>call $(SolutionDir)\install-libs.cmd</PreBuildEvent>
   </PropertyGroup>
