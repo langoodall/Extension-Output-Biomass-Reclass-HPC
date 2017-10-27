@@ -1,6 +1,6 @@
 #define PackageName      "Biomass Reclassified Output"
 #define PackageNameLong  "Biomass Reclassified Output Extension"
-#define Version          "2.1.1"
+#define Version          "2.1.2"
 #define ReleaseType      "official"
 #define CoreVersion      "6.0"
 #define CoreReleaseAbbr  ""
@@ -23,6 +23,7 @@ Source: ..\..\src\bin\debug\Landis.Extension.Output.BiomassReclass.dll; DestDir:
 ; Requisite auxiliary libraries
 ; NB. These libraries are used by other extensions and thus are never uninstalled.
 Source: ..\..\src\bin\Debug\Landis.Library.Metadata.dll; DestDir: {#ExtDir}; Flags: replacesameversion uninsneveruninstall
+Source: ..\..\src\bin\Debug\Landis.Library.BiomassCohorts-v2.0.1.dll; DestDir: {#ExtDir}; Flags: replacesameversion uninsneveruninstall
 
 
 ; Complete example for testing the extension
