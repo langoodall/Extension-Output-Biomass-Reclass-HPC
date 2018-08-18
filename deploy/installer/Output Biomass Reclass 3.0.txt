@@ -3,7 +3,7 @@ LandisData   Extension
 Name         "Output Biomass Reclass"
 Version      3.0
 Type         output
-Assembly     Landis.Extension.Output.BiomassReclass
+Assembly     Landis.Extension.Output.BiomassReclass-v3
 Class        Landis.Extension.Output.BiomassReclass.PlugIn
 Description  "Output forest reclassification maps using biomass"
 CoreVersion  7.0
