@@ -87,7 +87,11 @@ namespace Landis.Extension.Output.BiomassReclass
                     foreach (Site site in modelCore.Landscape.AllSites)
                     {
                         if (site.IsActive)
-                            pixel.MapCode.Value = CalcForestType(forestTypes, site);
+                        {
+                            byte forestType = CalcForestType(forestTypes, site);
+                            pixel.MapCode.Value = forestType;
+                            SiteVars.ForestType[site] = forestTypes[(int) forestType - 1].Name;
+                        }
                         else
                             pixel.MapCode.Value = 0;
                         
