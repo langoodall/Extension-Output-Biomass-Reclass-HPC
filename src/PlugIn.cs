@@ -90,7 +90,9 @@ namespace Landis.Extension.Output.BiomassReclass
                         {
                             byte forestType = CalcForestType(forestTypes, site);
                             pixel.MapCode.Value = forestType;
-                            SiteVars.ForestType[site] = forestTypes[(int) forestType - 1].Name;
+                            //SiteVars.ForestType[site] = forestTypes[(int) forestType - 1].Name;
+                            // Tweaked by John McNabb to account for cells without cohorts.
+                            SiteVars.ForestType[site] = forestType == 0 ? "NonForest" : forestTypes[forestType - 1].Name;
                         }
                         else
                             pixel.MapCode.Value = 0;
