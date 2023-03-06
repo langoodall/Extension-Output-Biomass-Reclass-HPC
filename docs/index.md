@@ -20,7 +20,7 @@ You need:
 
 # Download
 
-- The latest version of Biomass-By-Age can be [downloaded from GitHub](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-Reclass/blob/master/deploy/installer/LANDIS-II-V7%20Output%20Biomass%20Reclass%203.1-setup.exe). To install it on your computer, launch the installer.
+- The latest version of Biomass Output Reclassification can be [downloaded from GitHub](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-Reclass/blob/master/deploy/installer/LANDIS-II-V7%20Output%20Biomass%20Reclass%203.1-setup.exe). To install it on your computer, launch the installer.
 
 # Example Files
 
